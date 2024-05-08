@@ -1,0 +1,29 @@
+/* hero section container  */
+.heroSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  /* border-bottom: 1px solid var(--border); */
+}
+
+/* hero's left section */
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.leftSection img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid rgb(148, 131, 37);
+}
+.leftSection .heroSectionTitle {
+  color: var(--title);
+}
+.leftSection .heroSectionDescription {
+  color: var(--subtitle);
+}
