@@ -9,7 +9,7 @@
 }
 
 /* hero's left section */
-.leftSection {
+.heroSectionContainer .leftSection {
   display: flex;
   flex-direction: column;
   flex: 1;

@@ -5,3 +5,9 @@
   padding: 0 var(--container-padding);
   border: 3px solid var(--border);
 }
+
+.divider {
+  border-bottom: 1px solid var(--border);
+  width: calc(100% + var(--container-padding)+var(--container-padding));
+  padding: var(--container-padding);
+}
