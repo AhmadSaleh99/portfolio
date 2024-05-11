@@ -1,0 +1,63 @@
+.contactContainer {
+  margin: 2rem 0;
+}
+/* contact header styles */
+.contactContainer .contactHeader .contactTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 2rem;
+  color: var(--title);
+}
+.contactContainer .contactHeader .contactDescription {
+  color: var(--subtitle);
+  font-size: 16px;
+}
+
+/* contact body styles (form and animation ) */
+.contactContainer .contactBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.contactContainer .contactBody .rightSide {
+  flex: 1;
+}
+.contactContainer .contactBody .contactForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.contactContainer .contactBody .contactForm label {
+  font-size: 24px;
+  color: var(--subtitle);
+}
+.contactContainer .contactBody .contactForm input {
+  height: 30px;
+  /* display: inline; */
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--bgHeader);
+  color: var(--subtitle);
+}
+.contactContainer .contactBody .contactForm textarea {
+  height: 150px;
+  width: 450px;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--bgHeader);
+  color: var(--subtitle);
+  resize: none;
+}
+.contactContainer .contactBody .contactForm button {
+  width: 100px;
+  height: 35px;
+  background-color: var(--bgHeader);
+  border: 1px solid var(--border);
+  color: var(--title);
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}

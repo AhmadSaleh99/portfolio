@@ -1,0 +1,9 @@
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerContainer ul {
+  background-color: var(--secondary);
+  color: var(--subtitle);
+}
