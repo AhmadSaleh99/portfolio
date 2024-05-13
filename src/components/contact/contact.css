@@ -1,11 +1,21 @@
 .contactContainer {
   margin: 2rem 0;
 }
+
+.contactContainer .contactHeader {
+  position: relative;
+}
+.contactContainer .contactHeader .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 10px;
+}
 /* contact header styles */
 .contactContainer .contactHeader .contactTitle {
   font-size: 2rem;
   font-weight: bold;
-  margin: 0 2rem;
+  margin: 0 3rem;
   color: var(--title);
 }
 .contactContainer .contactHeader .contactDescription {
@@ -21,7 +31,8 @@
   margin-top: 2rem;
 }
 .contactContainer .contactBody .rightSide {
-  flex: 1;
+  width: 100%;
+  translate: 100px -50px;
 }
 .contactContainer .contactBody .contactForm {
   display: flex;

@@ -22,10 +22,13 @@
 
 /* light and dark mode button */
 .headerContainer button {
-  background: none;
   border-radius: 50%;
   border: 1px solid var(--border);
-  padding: 10px;
+  padding: 8px;
+  display: flex;
   background: var(--bgHeader);
   color: var(--subtitle);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
