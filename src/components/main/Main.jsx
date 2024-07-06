@@ -1,15 +1,16 @@
 import "./main.css";
+import LinkIcon from "@mui/icons-material/Link";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Main = () => {
   return (
     <div className="mainSectionContainer">
-      <div className="leftSection">
-        <ul className="projectsFilterList">
-          <li className="allProjects active">All Projects</li>
-          <li className="frontEnd">Front-End</li>
-          <li className="fullStack">Full-Stack</li>
-        </ul>
-      </div>
+      <section className="leftSection">
+        <button className="allProjects active">All Projects</button>
+        <button className="frontEnd">Front-End</button>
+        <button className="fullStack">Full-Stack</button>
+      </section>
       <div className="rightSection">
         <div className="card">
           <img src="/public/images/test.png" alt="photo" />
@@ -21,11 +22,18 @@ const Main = () => {
             </p>
             <div className="projectLinks">
               <div className="rightSectionProjectSource">
-                <span className="projectView">icon</span>
-                <span className="projectSourceCode">icon</span>
+                <span className="icon">
+                  <LinkIcon />
+                </span>
+                <span className="icon">
+                  <GitHubIcon />
+                </span>
               </div>
               <a href="#" className="learnMore">
                 More
+                <span style={{ alignSelf: "end", margin: "5px 0 0 5px" }}>
+                  <ArrowForwardIcon style={{ fontSize: "1rem" }} />
+                </span>
               </a>
             </div>
           </div>

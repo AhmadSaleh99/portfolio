@@ -1,32 +1,46 @@
 .mainSectionContainer {
   display: flex;
+  margin: 3rem 0;
   /* align-items: center; */
   justify-content: space-between;
-  margin: 2rem 0;
+  gap: 2.64rem 0;
 }
 
 /* left section styles */
-.leftSection .projectsFilterList {
-  list-style: none;
+.mainSectionContainer .leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.leftSection .projectsFilterList li {
-  margin: 1.5rem 0;
-  /* border: 1px solid var(--border); */
-  width: 100px;
-  padding: 0.6rem 1.2rem;
+
+.mainSectionContainer .leftSection button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem 0;
   text-align: center;
-  background-color: var(--bgHeader);
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.5;
   border-radius: 5px;
-  color: var(--subtitle);
+  transition: 0.3s;
 }
-.leftSection .projectsFilterList .active {
+
+.leftSection .active {
   border: 1px solid var(--blue);
   color: var(--title);
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0 !important;
+  opacity: 1 !important;
+}
+.leftSection button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* right section styles*/
 .mainSectionContainer .rightSection {
-  flex: 3;
+  flex-grow: 1;
   display: flex;
   margin-top: 1rem;
   justify-content: center;
@@ -74,6 +88,38 @@
   justify-content: space-between;
   align-items: center;
 }
-.rightSectionProjectSource .projectView {
+.rightSectionProjectSource .icon {
   margin: 0 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+.rightSectionProjectSource .icon:hover {
+  color: #d4d4d8;
+  font-size: 1.25rem;
+}
+.mainSectionContainer .rightSection .learnMore {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .mainSectionContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem 0;
+  }
+  .mainSectionContainer .leftSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mainSectionContainer .leftSection button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+  }
 }

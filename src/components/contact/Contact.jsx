@@ -34,7 +34,6 @@ const Contact = () => {
         <div className="rightSide">
           <Lottie
             // loop={false}
-            style={{ height: 355 }}
             animationData={contactAnimation}
           />
         </div>

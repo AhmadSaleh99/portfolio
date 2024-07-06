@@ -14,3 +14,9 @@ body {
   color: white;
   background-color: var(--primary);
 }
+button {
+  all: unset;
+}
+button:active {
+  scale: 0.9;
+}

@@ -8,6 +8,21 @@
 
 .divider {
   border-bottom: 1px solid var(--border);
-  width: calc(100% + var(--container-padding)+var(--container-padding));
-  /* padding: var(--container-padding); */
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding) * -1);
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+  .divider {
+    width: calc(100% + 1.7rem + 1.7rem);
+    margin-left: -1.7rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 87%;
+  }
 }

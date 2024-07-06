@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 3rem;
   /* border-bottom: 1px solid var(--border); */
 }
 
@@ -19,7 +20,12 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 2px solid rgb(148, 131, 37);
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
+.iconVerified {
+  color: var(--blue);
 }
 .leftSection .heroSectionTitle {
   color: var(--title);
@@ -37,4 +43,14 @@
 }
 .heroSectionContainer .rightSection {
   translate: 50px 30px;
+  width: 30rem;
+}
+/* media query */
+@media (max-width: 877px) {
+  .parentAvatar {
+    text-align: center;
+  }
+  .heroSectionContainer .rightSection {
+    width: 100%;
+  }
 }

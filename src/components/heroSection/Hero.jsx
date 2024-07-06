@@ -5,13 +5,19 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import VerifiedIcon from "@mui/icons-material/Verified";
 
 const Hero = () => {
   return (
     <div className="heroSectionContainer">
       {/* left section // my information */}
       <section className="leftSection">
-        <img src="/public/images/hero.png" alt="My photo" />
+        <div className="parentAvatar">
+          <img src="/public/images/hero.png" alt="My photo" />
+          <span>
+            <VerifiedIcon className="iconVerified" />
+          </span>
+        </div>
         <h1 className="heroSectionTitle">
           Software Engineer, And a Full Stack Web Developer.
         </h1>
@@ -34,7 +40,7 @@ const Hero = () => {
       <section className="RightSection">
         <Lottie
           // loop={false}
-          style={{ height: 355 }}
+          // style={{ height: 355 }}
           animationData={heroAnimation}
         />
       </section>
