@@ -123,3 +123,6 @@
     align-self: center;
   }
 }
+.submitButton:disabled {
+  cursor: not-allowed !important;
+}
