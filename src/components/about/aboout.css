@@ -1,0 +1,8 @@
+.aboutContainer .aboutTitle {
+  font-size: 30px;
+  color: var(--title);
+}
+.aboutContainer .description {
+  color: var(--subtitle);
+  text-align: justify;
+}

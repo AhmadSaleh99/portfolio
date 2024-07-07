@@ -13,7 +13,7 @@
 }
 /* contact header styles */
 .contactContainer .contactHeader .contactTitle {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: bold;
   margin: 0 3rem;
   color: var(--title);
@@ -44,7 +44,7 @@
   row-gap: 7px;
 }
 .contactContainer .contactBody .contactForm label {
-  font-size: 24px;
+  font-size: 1.3rem;
   color: var(--subtitle);
 }
 .contactContainer .contactBody .contactForm input {
@@ -66,6 +66,25 @@
   color: var(--subtitle);
   resize: none;
 }
+.light .contactContainer .contactBody .contactForm input,
+.light .contactContainer .contactBody .contactForm textarea {
+  background-color: rgba(255, 255, 255, 0.162);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  color: #232324;
+}
+.contactContainer .contactBody .contactForm input:hover,
+.contactContainer .contactBody .contactForm textarea:hover,
+.contactContainer .contactBody .contactForm input:focus,
+.contactContainer .contactBody .contactForm textarea:focus {
+  border: 1px solid rgb(45, 212, 191);
+}
+.light .contactContainer .contactBody .contactForm input:hover,
+.light .contactContainer .contactBody .contactForm textarea:hover,
+.light .contactContainer .contactBody .contactForm input:focus,
+.light .contactContainer .contactBody .contactForm textarea:focus {
+  border: 1px solid rgb(78, 80, 80);
+}
 .contactContainer .contactBody .contactForm button {
   width: 100px;
   height: 35px;
@@ -79,6 +98,11 @@
   text-align: center;
   transition: 0.3s;
 }
+.light .contactContainer .contactBody .contactForm button {
+  background-color: rgba(36, 37, 46, 1);
+  color: white;
+}
+
 .contactContainer .contactBody .contactForm button:hover {
   cursor: pointer;
   opacity: 1;
@@ -97,8 +121,5 @@
   }
   .contactContainer .contactBody .contactForm button {
     align-self: center;
-  }
-  .contactContainer .contactBody .contactForm label {
-    font-size: 19px;
   }
 }

@@ -1,6 +1,6 @@
 body {
   --primary: #000;
-  --secondary: rgb(24 24 27);
+  --secondary: rgb(24, 24, 27);
   --border: rgba(63, 63, 70, 0.4);
   --title: rgb(244 244 245);
   --subtitle: rgb(161 161 170);
@@ -13,6 +13,17 @@ body {
   box-sizing: border-box;
   color: white;
   background-color: var(--primary);
+  /* transition: 0.5s; */
+}
+body.light {
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 91);
+  --bgHeader: rgb(253, 253, 253);
+  --blue: rgb(0, 149, 246);
+  --icon-hover: #333;
 }
 button {
   all: unset;

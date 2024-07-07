@@ -27,11 +27,14 @@
 
 .leftSection .active {
   border: 1px solid var(--blue);
-  color: var(--title);
+  /* color: var(--title); */
   font-weight: bold;
   letter-spacing: 0.6px;
   padding: 0.8rem 0 !important;
   opacity: 1 !important;
+}
+.light .leftSection .active {
+  border: 1px solid #000;
 }
 .leftSection button:hover {
   opacity: 1;
@@ -42,7 +45,7 @@
 .mainSectionContainer .rightSection {
   flex-grow: 1;
   display: flex;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -51,6 +54,7 @@
 }
 .mainSectionContainer .rightSection .card {
   width: 266px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(93, 188, 252, 0.3);
   border-radius: 5px;
   overflow: hidden;
@@ -59,6 +63,13 @@
     rgba(225, 225, 225, 0.05),
     rgba(225, 225, 225, 0.05)
   );
+}
+.light .mainSectionContainer .rightSection .card,
+.light .mainSectionContainer .rightSection .card:hover {
+  border: none;
+}
+.light .mainSectionContainer .rightSection .card:hover {
+  background-color: rgb(246, 246, 246);
 }
 .mainSectionContainer .rightSection .card:hover {
   border: 1px solid var(--blue);
@@ -77,6 +88,7 @@
 
 .mainSectionContainer .rightSection .projectTitle {
   color: var(--title);
+  font-size: 1.5rem;
 }
 .mainSectionContainer .rightSection .projectDescription {
   color: var(--subtitle);
@@ -94,7 +106,7 @@
   color: var(--subtitle);
 }
 .rightSectionProjectSource .icon:hover {
-  color: #d4d4d8;
+  color: var(--icon-hover);
   font-size: 1.25rem;
 }
 .mainSectionContainer .rightSection .learnMore {

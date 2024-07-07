@@ -6,21 +6,33 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import VerifiedIcon from "@mui/icons-material/Verified";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="heroSectionContainer">
       {/* left section // my information */}
       <section className="leftSection">
-        <div className="parentAvatar">
-          <img src="/public/images/hero.png" alt="My photo" />
+        <div className="parentAvatar" style={{ minHeight: "88px" }}>
+          <motion.img
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1)" }}
+            transition={{ damping: 7, type: "spring", stiffness: 100 }}
+            src="/public/images/hero.png"
+            alt="My photo"
+          />
           <span>
             <VerifiedIcon className="iconVerified" />
           </span>
         </div>
-        <h1 className="heroSectionTitle">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="heroSectionTitle"
+        >
           Software Engineer, And a Full Stack Web Developer.
-        </h1>
+        </motion.h1>
         <p className="heroSectionDescription">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
           vitae. Reprehenderit, accusantium animi hic fuga optio inventore
@@ -29,10 +41,18 @@ const Hero = () => {
         </p>
         {/* social icons */}
         <div className="heroSectionIcons">
-          <WhatsAppIcon style={{ cursor: "pointer" }} />
-          <InstagramIcon style={{ cursor: "pointer" }} />
-          <GitHubIcon style={{ cursor: "pointer" }} />
-          <LinkedInIcon style={{ cursor: "pointer" }} />
+          <a className="icon" href="">
+            <WhatsAppIcon style={{ cursor: "pointer" }} />
+          </a>
+          <a className="icon" href="">
+            <InstagramIcon style={{ cursor: "pointer" }} />
+          </a>
+          <a className="icon" href="">
+            <GitHubIcon style={{ cursor: "pointer" }} />
+          </a>{" "}
+          <a className="icon" href="">
+            <LinkedInIcon style={{ cursor: "pointer" }} />
+          </a>{" "}
         </div>
       </section>
 

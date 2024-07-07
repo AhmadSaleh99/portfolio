@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./header.css";
 
 import NightlightIcon from "@mui/icons-material/Nightlight";
@@ -7,8 +7,21 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Header = () => {
-  const [lightDarkMode, SetLightDarkMode] = useState("dark");
+  const [lightDarkMode, SetLightDarkMode] = useState(
+    localStorage.getItem("currentMode") ?? "dark"
+  );
   const [showModel, setShowModel] = useState(false);
+
+  useEffect(() => {
+    if (lightDarkMode === "light") {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    }
+  }, [lightDarkMode]);
+
   return (
     <header className="headerContainer">
       <button className="menu" onClick={() => setShowModel(true)}>
@@ -39,13 +52,20 @@ const Header = () => {
 
       {/* light dark mode */}
       <button
-        onClick={() =>
-          lightDarkMode === "dark"
-            ? SetLightDarkMode("light")
-            : SetLightDarkMode("dark")
-        }
+        onClick={() => {
+          localStorage.setItem(
+            "currentMode",
+            lightDarkMode === "dark" ? "light" : "dark"
+          );
+
+          SetLightDarkMode(localStorage.getItem("currentMode"));
+        }}
       >
-        {lightDarkMode === "light" ? <LightModeIcon /> : <NightlightIcon />}
+        {lightDarkMode === "light" ? (
+          <LightModeIcon style={{ color: "rgb(255,165,0)" }} />
+        ) : (
+          <NightlightIcon />
+        )}
       </button>
 
       {/* model ** popup menu */}

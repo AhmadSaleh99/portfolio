@@ -16,6 +16,7 @@
   background-color: var(--bgHeader);
   border-radius: 50px;
   padding: 0.5rem 0;
+  /* transition: 0.5s; */
 }
 .navbarItems li {
   margin: 0 1rem;
@@ -104,6 +105,7 @@
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
 }
 .headerContainer button:hover {
   color: var(--title);

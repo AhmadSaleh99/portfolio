@@ -1,0 +1,89 @@
+.toolsContainer .toolsTitle {
+  font-size: 30px;
+  color: var(--title);
+}
+.toolsContainer .mainSectionContainer {
+  margin-top: 1.5rem;
+}
+.leftSection .active {
+  border: 1px solid var(--blue);
+  /* color: var(--title); */
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0 !important;
+  opacity: 1 !important;
+}
+.light .leftSection .active {
+  border: 1px solid #000;
+}
+/* right section styles*/
+.mainSectionContainer .toolsRightSection {
+  flex-grow: 1;
+  display: flex;
+  /* margin-top: 1rem; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 2rem;
+}
+.mainSectionContainer .toolsRightSection .card {
+  /*width: 158px; */
+  padding-top: 15px;
+  /* box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.16); */
+  /* border: 1px solid rgba(93, 188, 252, 0.3); */
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+  /* background-image: linear-gradient( rgba(225, 225, 225, 0.05), rgba(225, 225, 225, 0.05) ); */
+  text-align: center;
+}
+
+@keyframes image {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.mainSectionContainer .toolsRightSection .card:hover img {
+  animation: image 0.3s 1;
+}
+.mainSectionContainer .toolsRightSection img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid rgba(93, 188, 252, 0.3);
+  z-index: 22222;
+}
+.light .mainSectionContainer .toolsRightSection img {
+  border: 2px solid rgba(19, 21, 22, 0.616);
+}
+
+.mainSectionContainer .toolsRightSection .box {
+  margin: 0 0.5rem 0.5rem;
+}
+
+.mainSectionContainer .toolsRightSection .projectTitle {
+  color: var(--title);
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    rgba(225, 225, 225, 0.05),
+    rgba(225, 225, 225, 0.05)
+  );
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+.light .mainSectionContainer .toolsRightSection .projectTitle {
+  background-image: linear-gradient(
+    rgba(172, 172, 172, 0.863),
+    rgba(151, 151, 151, 0.808)
+  );
+}

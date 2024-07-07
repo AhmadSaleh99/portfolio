@@ -22,6 +22,7 @@
   border-radius: 50%;
   border: 1px solid darkorange;
   padding: 1px;
+  min-height: 88px;
   box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
 }
 .iconVerified {
@@ -41,6 +42,16 @@
   column-gap: 10px;
   margin-top: 10px;
 }
+.heroSectionContainer .leftSection .heroSectionIcons .icon {
+  margin: 0 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+.heroSectionContainer .leftSection .heroSectionIcons .icon:hover {
+  color: var(--icon-hover);
+  font-size: 1.25rem;
+}
+
 .heroSectionContainer .rightSection {
   translate: 50px 30px;
   width: 30rem;
