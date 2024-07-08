@@ -30,11 +30,7 @@ const Header = () => {
 
       {/* logo */}
       <div className="logo">
-        <img
-          src="/public/images/logo.png"
-          alt="Saleh."
-          style={{ width: "150px" }}
-        />
+        <img src="/images/logo.png" alt="Saleh." style={{ width: "150px" }} />
       </div>
 
       {/* list items */}

@@ -19,7 +19,7 @@ const Hero = () => {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
             transition={{ damping: 7, type: "spring", stiffness: 100 }}
-            src="../../../public/images/hero.png"
+            src="/images/hero.png"
             alt="My photo"
           />
           <span>
