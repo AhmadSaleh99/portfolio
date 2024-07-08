@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <div className="contactContainer">
-      <div className="contactHeader">
+      <div className="contactHeader" id="contact">
         <span className="icon">
           <Lottie
             // loop={false}

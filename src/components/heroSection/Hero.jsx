@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import { motion } from "framer-motion";
+import { Email } from "@mui/icons-material";
 
 const Hero = () => {
   return (
@@ -31,26 +32,25 @@ const Hero = () => {
           transition={{ duration: 2 }}
           className="heroSectionTitle"
         >
-          Software Engineer, And a Full Stack Web Developer.
+          Ahmad Mohamad Saleh
         </motion.h1>
         <p className="heroSectionDescription">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-          vitae. Reprehenderit, accusantium animi hic fuga optio inventore
-          maiores cupiditate, a harum minus possimus itaque voluptatum eligendi
-          corporis qui. Eaque, libero?
+          Empowering businesses with dynamic web applications as a full stack
+          web developer, merging creativity with cutting-edge development
+          expertise.
         </p>
         {/* social icons */}
         <div className="heroSectionIcons">
-          <a className="icon" href="">
+          <a className="icon" href="https://wa.me/963993407695">
             <WhatsAppIcon style={{ cursor: "pointer" }} />
           </a>
-          <a className="icon" href="">
-            <InstagramIcon style={{ cursor: "pointer" }} />
+          <a className="icon" href="mailto:saleehsaleh816@gmail.com">
+            <Email style={{ cursor: "pointer" }} />
           </a>
-          <a className="icon" href="">
+          <a className="icon" href="https://github.com/AhmadSaleh99/">
             <GitHubIcon style={{ cursor: "pointer" }} />
           </a>{" "}
-          <a className="icon" href="">
+          <a className="icon" href="/">
             <LinkedInIcon style={{ cursor: "pointer" }} />
           </a>{" "}
         </div>

@@ -17,57 +17,117 @@ const button = [
 const projects = [
   {
     id: 1,
-    title: "Skills",
-    img: "/public/images/test.png",
+    title: "HTML",
+    img: "/public/images/html.png",
     category: "Skills",
   },
   {
     id: 2,
-    title: "Tools",
-    img: "/public/images/test.png",
-    category: "Tools",
+    title: "CSS",
+    img: "/public/images/css.png",
+    category: "Skills",
   },
   {
     id: 3,
-    title: "Skills",
-    img: "/public/images/test.png",
+    title: "JAVASCRIPT",
+    img: "/public/images/js.png",
     category: "Skills",
   },
   {
     id: 4,
-    title: "Tools",
-    img: "/public/images/test.png",
-    category: "Tools",
+    title: "REACT JS",
+    img: "/public/images/react.png",
+    category: "Skills",
   },
   {
     id: 5,
-    title: "Skills",
-    img: "/public/images/test.png",
+    title: "NODE JS",
+    img: "/public/images/nodejs.png",
     category: "Skills",
   },
   {
     id: 6,
-    title: "Tools",
-    img: "/public/images/test.png",
-    category: "Tools",
+    title: "EXPRESS JS",
+    img: "/public/images/expressjs.png",
+    category: "Skills",
   },
   {
     id: 7,
-    title: "Skills",
-    img: "/public/images/test.png",
-    category: "Skills",
-  },
-  {
-    id: 8,
-    title: "Tools",
-    img: "/public/images/test.png",
+    title: "MONGODB",
+    img: "/public/images/mongodb.png",
     category: "Tools",
   },
   {
-    id: 9,
-    title: "Skills",
-    img: "/public/images/test.png",
+    id: 8,
+    title: "NEXT JS",
+    img: "/public/images/nextjs-svgrepo-com.svg",
     category: "Skills",
+  },
+  {
+    id: 9,
+    title: "Tailwind css",
+    img: "/public/images/tailwindcss.png",
+    category: "Skills",
+  },
+  {
+    id: 10,
+    title: "Material ui",
+    img: "/public/images/mui.png",
+    category: "Tools",
+  },
+  {
+    id: 11,
+    title: "Firebase",
+    img: "/public/images/firebase.png",
+    category: "Tools",
+  },
+  {
+    id: 12,
+    title: "React Redux",
+    img: "/public/images/redux.png",
+    category: "Tools",
+  },
+  {
+    id: 13,
+    title: "Redux Toolkit",
+    img: "/public/images/redux.png",
+    category: "Tools",
+  },
+  {
+    id: 14,
+    title: "Git",
+    img: "/public/images/git.png",
+    category: "Tools",
+  },
+  {
+    id: 15,
+    title: "GitHub",
+    img: "/public/images/github-color-svgrepo-com.svg",
+    category: "Tools",
+  },
+  {
+    id: 16,
+    title: "Framer Motion",
+    img: "/public/images/framerMotion.svg",
+    category: "Skills",
+  },
+  {
+    id: 17,
+    title: "TypeScript",
+    img: "/public/images/typescript-seeklogo.svg",
+    category: "Skills",
+  },
+  {
+    id: 18,
+    title: "Python",
+    img: "/public/images/python.png",
+    category: "Skills",
+  },
+  {
+    id: 18,
+    title: "Vscode",
+    img: "/public/images/vscode.png",
+    category: "Tools",
   },
 ];
 
@@ -81,9 +141,11 @@ const Tools = () => {
 
   return (
     <div className="toolsContainer">
-      <h1 className="toolsTitle">Skills & Tools</h1>
+      <h1 className="toolsTitle" id="skills">
+        Skills & Tools
+      </h1>
       <div className="mainSectionContainer">
-        <section className="leftSection">
+        <section className="leftSection" style={{ paddingTop: "15px" }}>
           {button.map((item) => (
             <button
               key={item.id}
@@ -115,7 +177,6 @@ const Tools = () => {
                 <img src={project.img} alt="photo" />
                 <div className="box">
                   <h1 className="projectTitle">{project.title}</h1>
-                  <p className="projectDescription">{project.description}</p>
                 </div>
               </motion.div>
             ))}{" "}

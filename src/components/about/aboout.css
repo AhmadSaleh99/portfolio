@@ -6,3 +6,6 @@
   color: var(--subtitle);
   text-align: justify;
 }
+.aboutContainer {
+  margin-bottom: 2rem;
+}
