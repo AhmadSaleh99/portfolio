@@ -22,7 +22,7 @@ const Footer = () => {
       </ul>
       <div className="logo">
         <img
-          src="/public/images/logo.png"
+          src="/images/logo.png"
           alt="Saleh."
           style={{ width: "150px", margin: "1rem 0" }}
         />

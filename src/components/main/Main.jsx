@@ -19,7 +19,7 @@ const projects = [
   {
     id: 1,
     title: "Gym Exercises",
-    img: "/public/images/p8.png",
+    img: "/images/p8.png",
     category: "Front-End",
     description: "",
 
@@ -29,7 +29,7 @@ const projects = [
   {
     id: 2,
     title: "YouTube clone",
-    img: "/public/images/p9.png",
+    img: "/images/p9.png",
 
     category: "Front-End",
     description: "",
@@ -39,7 +39,7 @@ const projects = [
   {
     id: 3,
     title: "Todo List",
-    img: "/public/images/p10.png",
+    img: "/images/p10.png",
     category: "Front-End",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/todo-list/",
@@ -48,7 +48,7 @@ const projects = [
   {
     id: 4,
     title: "Simple Linkedin clone",
-    img: "/public/images/p2.png",
+    img: "/images/p2.png",
 
     category: "Full-Stack",
     description: "",
@@ -58,7 +58,7 @@ const projects = [
   {
     id: 5,
     title: "simple netflix clone",
-    img: "/public/images/p4.png",
+    img: "/images/p4.png",
     category: "Front-End",
     description: "",
     reviewLink: "https://netflix-clone-83a0f.web.app/",
@@ -67,7 +67,7 @@ const projects = [
   {
     id: 6,
     title: "Leon agency",
-    img: "/public/images/p5.png",
+    img: "/images/p5.png",
 
     category: "Front-End",
     description: "",
@@ -77,7 +77,7 @@ const projects = [
   {
     id: 7,
     title: "Coffee Shop",
-    img: "/public/images/p6.png",
+    img: "/images/p6.png",
     category: "Front-End",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/Coffee-Shope/",
@@ -86,7 +86,7 @@ const projects = [
   {
     id: 8,
     title: "GPT-3",
-    img: "/public/images/p7.png",
+    img: "/images/p7.png",
 
     category: "Front-End",
     description: "",
@@ -96,7 +96,7 @@ const projects = [
   {
     id: 9,
     title: "Memory Card Game",
-    img: "/public/images/p11.png",
+    img: "/images/p11.png",
 
     category: "Front-End",
     description: "",
@@ -106,7 +106,7 @@ const projects = [
   {
     id: 10,
     title: "Tic Tac Toe Game",
-    img: "/public/images/p12.png",
+    img: "/images/p12.png",
 
     category: "Front-End",
     description: "",
@@ -116,7 +116,7 @@ const projects = [
   {
     id: 11,
     title: "Insure landing page",
-    img: "/public/images/p15.png",
+    img: "/images/p15.png",
 
     category: "Front-End",
     description: "",
@@ -126,7 +126,7 @@ const projects = [
   {
     id: 12,
     title: "Special design for web development agency",
-    img: "/public/images/p16.png",
+    img: "/images/p16.png",
 
     category: "Front-End",
     description: "",
@@ -136,7 +136,7 @@ const projects = [
   {
     id: 13,
     title: "Art Agency Landing page",
-    img: "/public/images/p17.png",
+    img: "/images/p17.png",
 
     category: "Front-End",
     description: "",
@@ -146,7 +146,7 @@ const projects = [
   {
     id: 14,
     title: "Social Media Application (MemoRift)",
-    img: "/public/images/p1.png",
+    img: "/images/p1.png",
 
     category: "Full-Stack",
     description: "",
