@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./tools.css";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -14,7 +14,7 @@ const button = [
     value: "Tools",
   },
 ];
-const projects = [
+const skills = [
   {
     id: 1,
     title: "HTML",
@@ -134,13 +134,13 @@ const projects = [
 const Tools = () => {
   const [active, setActive] = useState("Skills");
   const [newProjectArray, setNewProjectArray] = useState(
-    projects.filter((project) => {
+    skills.filter((project) => {
       return project.category === "Skills";
     })
   );
 
   return (
-    <div className="toolsContainer">
+    <div className="toolsContainer" id="skills">
       <h1 className="toolsTitle" id="skills">
         Skills & Tools
       </h1>
@@ -151,7 +151,7 @@ const Tools = () => {
               key={item.id}
               onClick={() => {
                 setActive(item.value);
-                const newArray = projects.filter((project) => {
+                const newArray = skills.filter((project) => {
                   return project.category === item.value;
                 });
 

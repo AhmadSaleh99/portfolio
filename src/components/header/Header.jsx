@@ -44,9 +44,9 @@ const Header = () => {
         <li>
           <a href="#projects">Projects</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#certificates">Certificates</a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact">Contact</a>
         </li>
@@ -77,20 +77,17 @@ const Header = () => {
             <button className="close" onClick={() => setShowModel(false)}>
               <CloseIcon />
             </button>
-            <li>
-              <a href="#">About</a>
+             <li>
+               <a href="#about">About</a>
+             </li>
+             <li>
+                <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Articles</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Projects</a>
-            </li>
-            <li>
-              <a href="#">Speaking</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

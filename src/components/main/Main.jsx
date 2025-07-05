@@ -8,19 +8,28 @@ import { AnimatePresence, motion } from "framer-motion";
 const button = [
   {
     id: 1,
-    name: "All Projects",
-    value: "All Projects",
+    name: "My Projects",
+    value: "My Projects",
   },
-  { id: 2, name: "Front-End", value: "Front-End" },
-  { id: 3, name: "Full-Stack", value: "Full-Stack" },
+  { id: 2, name: "Design", value: "Design" },
 ];
 
 const projects = [
+    {
+    id: 14,
+    title: "Social Media Application (MemoRift)",
+    img: "/images/p1.png",
+
+    category: "My Projects",
+    description: "",
+    reviewLink: "https://beamish-kheer-f833c1.netlify.app",
+    gitLink: "https://github.com/AhmadSaleh99/social-media-app.git",
+  },
   {
     id: 1,
     title: "Gym Exercises",
     img: "/images/p8.png",
-    category: "Front-End",
+    category: "My Projects",
     description: "",
 
     reviewLink: "https://sage-meerkat-faedb8.netlify.app/",
@@ -31,7 +40,7 @@ const projects = [
     title: "YouTube clone",
     img: "/images/p9.png",
 
-    category: "Front-End",
+    category: "My Projects",
     description: "",
     reviewLink: "https://subtle-lolly-f3fd73.netlify.app/",
     gitLink: "https://github.com/AhmadSaleh99/youTube-Clone",
@@ -40,7 +49,7 @@ const projects = [
     id: 3,
     title: "Todo List",
     img: "/images/p10.png",
-    category: "Front-End",
+    category: "My Projects",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/todo-list/",
     gitLink: "https://github.com/AhmadSaleh99/todo-list",
@@ -50,7 +59,7 @@ const projects = [
     title: "Simple Linkedin clone",
     img: "/images/p2.png",
 
-    category: "Full-Stack",
+    category: "My Projects",
     description: "",
     reviewLink: "https://linkedin-clone-7ed09.web.app/",
     gitLink: "https://github.com/AhmadSaleh99/linkedin-clone",
@@ -59,7 +68,7 @@ const projects = [
     id: 5,
     title: "simple netflix clone",
     img: "/images/p4.png",
-    category: "Front-End",
+    category: "My Projects",
     description: "",
     reviewLink: "https://netflix-clone-83a0f.web.app/",
     gitLink: "https://github.com/AhmadSaleh99/netflix-clone",
@@ -69,7 +78,7 @@ const projects = [
     title: "Leon agency",
     img: "/images/p5.png",
 
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/template-one/",
     gitLink: "https://github.com/AhmadSaleh99/template-one",
@@ -78,7 +87,7 @@ const projects = [
     id: 7,
     title: "Coffee Shop",
     img: "/images/p6.png",
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/Coffee-Shope/",
     gitLink: "https://github.com/AhmadSaleh99/Coffee-Shope",
@@ -88,7 +97,7 @@ const projects = [
     title: "GPT-3",
     img: "/images/p7.png",
 
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://stupendous-froyo-3d8f4f.netlify.app/",
     gitLink: "https://github.com/AhmadSaleh99/gpt_ash",
@@ -98,7 +107,7 @@ const projects = [
     title: "Memory Card Game",
     img: "/images/p11.png",
 
-    category: "Front-End",
+    category: "My Projects",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/memory-card-game/",
     gitLink: "https://github.com/AhmadSaleh99/memory-card-game",
@@ -108,7 +117,7 @@ const projects = [
     title: "Tic Tac Toe Game",
     img: "/images/p12.png",
 
-    category: "Front-End",
+    category: "My Projects",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/tic-tac-toe-game/",
     gitLink: "https://github.com/AhmadSaleh99/tic-tac-toe-game",
@@ -118,7 +127,7 @@ const projects = [
     title: "Insure landing page",
     img: "/images/p15.png",
 
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/challenge-one/",
     gitLink: "https://github.com/AhmadSaleh99/challenge-one",
@@ -128,7 +137,7 @@ const projects = [
     title: "Special design for web development agency",
     img: "/images/p16.png",
 
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/special-design/",
     gitLink: "https://github.com/AhmadSaleh99/special-design",
@@ -138,25 +147,16 @@ const projects = [
     title: "Art Agency Landing page",
     img: "/images/p17.png",
 
-    category: "Front-End",
+    category: "Design",
     description: "",
     reviewLink: "https://ahmadsaleh99.github.io/template-two/",
     gitLink: "https://github.com/AhmadSaleh99/template-two",
   },
-  {
-    id: 14,
-    title: "Social Media Application (MemoRift)",
-    img: "/images/p1.png",
 
-    category: "Full-Stack",
-    description: "",
-    reviewLink: "https://beamish-kheer-f833c1.netlify.app",
-    gitLink: "https://github.com/AhmadSaleh99/social-media-app.git",
-  },
 ];
 const Main = () => {
-  const [active, setActive] = useState("All Projects");
-  const [newProjectArray, setNewProjectArray] = useState(projects);
+  const [active, setActive] = useState("My Projects");
+  const [newProjectArray, setNewProjectArray] = useState(projects.filter((project) => project.category === "My Projects"));
 
   return (
     <div className="mainSectionContainer" id="projects">
@@ -166,12 +166,12 @@ const Main = () => {
             key={item.id}
             onClick={() => {
               setActive(item.value);
-              const newArray =
-                item.value !== "All Projects"
-                  ? projects.filter((project) => {
-                      return project.category === item.value;
-                    })
-                  : projects;
+              const newArray = projects.filter(project=> project.category === item.value);
+                // item.value !== "My Projects"
+                //   ? projects.filter((project) => {
+                //       return project.category === item.value;
+                //     })
+                //   : projects;
               setNewProjectArray(newArray);
             }}
             className={active === item.name ? "active" : null}
