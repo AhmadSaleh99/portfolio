@@ -86,6 +86,9 @@ const Header = () => {
             <li>
                 <a href="#projects">Projects</a>
             </li>
+            {/* <li>
+          <a href="#certificates">Certificates</a>
+        </li> */}
             <li>
                 <a href="#contact">Contact</a>
             </li>

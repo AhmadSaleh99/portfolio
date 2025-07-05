@@ -174,7 +174,7 @@ const Tools = () => {
                 className="card"
                 key={project.id}
               >
-                <img src={project.img} alt="photo" />
+                <img src={project.img} alt="photo" loading="lazy" />
                 <div className="box">
                   <h1 className="projectTitle">{project.title}</h1>
                 </div>
