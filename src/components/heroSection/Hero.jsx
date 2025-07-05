@@ -8,20 +8,27 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import { motion } from "framer-motion";
 import { Email } from "@mui/icons-material";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div className="heroSectionContainer">
       {/* left section // my information */}
       <section className="leftSection">
         <div className="parentAvatar" style={{ minHeight: "88px" }}>
+          {!isLoaded && (
+        <div className="absolute inset-0 bg-gray-300 animate-pulse rounded" />
+      )}
           <motion.img
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
             transition={{ damping: 7, type: "spring", stiffness: 100 }}
             src="/images/hero.png"
             alt="My photo"
-            loading="lazy"
+            loading="lazy" 
+            className={`w-full h-full object-cover rounded ${isLoaded ? "block" : "hidden"}`}
+            onLoad={()=>setIsLoaded(true)}
           />
           <span>
             <VerifiedIcon className="iconVerified" />

@@ -133,6 +133,8 @@ const skills = [
 
 const Tools = () => {
   const [active, setActive] = useState("Skills");
+    const [isLoaded, setIsLoaded] = useState(false);
+
   const [newProjectArray, setNewProjectArray] = useState(
     skills.filter((project) => {
       return project.category === "Skills";
@@ -174,7 +176,11 @@ const Tools = () => {
                 className="card"
                 key={project.id}
               >
-                <img src={project.img} alt="photo" loading="lazy" />
+                {!isLoaded && (
+        <div className="absolute inset-0 bg-gray-300 animate-pulse rounded" />
+      )}
+                <img src={project.img} alt="photo" loading="lazy" className={`w-full h-full object-cover rounded ${isLoaded ? "block" : "hidden"}`}
+            onLoad={()=>setIsLoaded(true)} />
                 <div className="box">
                   <h1 className="projectTitle">{project.title}</h1>
                 </div>
