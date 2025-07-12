@@ -16,12 +16,22 @@ const button = [
 
 const projects = [
     {
+    id: 15,
+    title: "The Gilded Fork",
+    img: "/images/p-15.png",
+
+    category: "My Projects",
+    description: "The Gilded Fork, a sophisticated and elegant restaurant website. This project is designed to showcase a luxurious dining experience, aiming to captivate visitors and attract patrons by highlighting our culinary excellence, refined ambiance, and unique offerings.",
+    reviewLink: "https://the-gilded-fork-plum.vercel.app",
+    gitLink: "https://github.com/AhmadSaleh99/the-gilded-fork.git",
+  },
+    {
     id: 14,
     title: "Social Media Application (MemoRift)",
     img: "/images/p1.png",
 
     category: "My Projects",
-    description: "",
+    description: "Discover the world's hidden gems! This social app lets users share stunning travel experiences, engage with posts through likes and comments, and connect with fellow adventurers.",
     reviewLink: "https://beamish-kheer-f833c1.netlify.app",
     gitLink: "https://github.com/AhmadSaleh99/social-media-app.git",
   },
@@ -30,7 +40,7 @@ const projects = [
     title: "Gym Exercises",
     img: "/images/p8.png",
     category: "My Projects",
-    description: "",
+    description: "This interactive gym exercise platform helps users discover, filter, and search a comprehensive database of workouts. Each exercise includes detailed instructions and visual guides, empowering users to learn and perform routines effectively.",
 
     reviewLink: "https://sage-meerkat-faedb8.netlify.app/",
     gitLink: "https://github.com/AhmadSaleh99/gym-exercises",
@@ -41,7 +51,7 @@ const projects = [
     img: "/images/p9.png",
 
     category: "My Projects",
-    description: "",
+    description: "A basic video playback application, built as a minimalist YouTube clone. It focuses solely on displaying videos and offering fundamental search capabilities.",
     reviewLink: "https://subtle-lolly-f3fd73.netlify.app/",
     gitLink: "https://github.com/AhmadSaleh99/youTube-Clone",
   },
@@ -50,7 +60,7 @@ const projects = [
     title: "Todo List",
     img: "/images/p10.png",
     category: "My Projects",
-    description: "",
+    description: "An interactive web-based Todo List application designed for efficient task management. Users can easily add, track, and filter tasks by their completion status (All, Completed, Uncompleted) for streamlined organization.",
     reviewLink: "https://ahmadsaleh99.github.io/todo-list/",
     gitLink: "https://github.com/AhmadSaleh99/todo-list",
   },
@@ -60,7 +70,7 @@ const projects = [
     img: "/images/p2.png",
 
     category: "My Projects",
-    description: "",
+    description: "A minimalist professional networking platform focusing on core functionalities. Users can create basic profiles, demonstrating fundamental social networking principles in a professional context.",
     reviewLink: "https://linkedin-clone-7ed09.web.app/",
     gitLink: "https://github.com/AhmadSaleh99/linkedin-clone",
   },
@@ -69,7 +79,7 @@ const projects = [
     title: "simple netflix clone",
     img: "/images/p4.png",
     category: "My Projects",
-    description: "",
+    description: "A front-end focused Netflix clone, meticulously designed to recreate the iconic user interface and content Browse experience. This project demonstrates core UI/UX principles, responsive layout, and a fundamental understanding of video platform presentation, without streaming functionality.",
     reviewLink: "https://netflix-clone-83a0f.web.app/",
     gitLink: "https://github.com/AhmadSaleh99/netflix-clone",
   },
@@ -79,7 +89,7 @@ const projects = [
     img: "/images/p5.png",
 
     category: "Design",
-    description: "",
+    description: "minimalist agency web template named Leon, designed to showcase creative services and projects. It features sections for services like Graphic Design, UI & UX, Web Design, and Web Development, along with a portfolio, an about section, and contact information.",
     reviewLink: "https://ahmadsaleh99.github.io/template-one/",
     gitLink: "https://github.com/AhmadSaleh99/template-one",
   },
@@ -88,7 +98,7 @@ const projects = [
     title: "Coffee Shop",
     img: "/images/p6.png",
     category: "Design",
-    description: "",
+    description: "coffee shop template that provides an online presence for a cafe. It showcases a detailed menu of coffee and other products, features an About Us section, displays customer reviews, and includes a blog, allowing visitors to explore offerings and learn about the shop.",
     reviewLink: "https://ahmadsaleh99.github.io/Coffee-Shope/",
     gitLink: "https://github.com/AhmadSaleh99/Coffee-Shope",
   },
@@ -98,7 +108,7 @@ const projects = [
     img: "/images/p7.png",
 
     category: "Design",
-    description: "",
+    description: "A minimalist website design, built as a simple template inspired by the sleek aesthetics often associated with GPT-3 interfaces. This project showcases clean UI/UX and fundamental web design principles.",
     reviewLink: "https://stupendous-froyo-3d8f4f.netlify.app/",
     gitLink: "https://github.com/AhmadSaleh99/gpt_ash",
   },
@@ -108,7 +118,7 @@ const projects = [
     img: "/images/p11.png",
 
     category: "My Projects",
-    description: "",
+    description: "A classic web-based memory card game, showcasing fundamental game development principles. This project features core gameplay mechanics and a simple interface, designed to demonstrate interactive logic and user engagement.",
     reviewLink: "https://ahmadsaleh99.github.io/memory-card-game/",
     gitLink: "https://github.com/AhmadSaleh99/memory-card-game",
   },
@@ -118,7 +128,7 @@ const projects = [
     img: "/images/p12.png",
 
     category: "My Projects",
-    description: "",
+    description: "A classic web-based Tic-Tac-Toe game, demonstrating fundamental interactive web development. This project showcases basic game logic, user interface design, and client-side scripting in a simple, engaging format.",
     reviewLink: "https://ahmadsaleh99.github.io/tic-tac-toe-game/",
     gitLink: "https://github.com/AhmadSaleh99/tic-tac-toe-game",
   },
@@ -128,7 +138,7 @@ const projects = [
     img: "/images/p15.png",
 
     category: "Design",
-    description: "",
+    description: "A modern landing page for Insureance, a life insurance company focused on humanizing the process. This project showcases a clean design, highlighting a snappy application, affordable plans, and a people-first approach to insurance solutions.",
     reviewLink: "https://ahmadsaleh99.github.io/challenge-one/",
     gitLink: "https://github.com/AhmadSaleh99/challenge-one",
   },
@@ -138,7 +148,7 @@ const projects = [
     img: "/images/p16.png",
 
     category: "Design",
-    description: "",
+    description: "A creative agency portfolio website showcasing diverse skills in web development (HTML, CSS, JavaScript, Python, PHP, MySQL) and design. It features a project gallery, client testimonials, and a timeline of accomplishments, designed to attract potential clients and highlight professional capabilities.",
     reviewLink: "https://ahmadsaleh99.github.io/special-design/",
     gitLink: "https://github.com/AhmadSaleh99/special-design",
   },
@@ -148,7 +158,7 @@ const projects = [
     img: "/images/p17.png",
 
     category: "Design",
-    description: "",
+    description: "A modern and responsive portfolio website template for a creative agency, Kasper.It showcases design capabilities, a categorized project gallery, and highlights skills in web technologies like HTML, CSS, JavaScript, and PHP, alongside pricing and client testimonials.",
     reviewLink: "https://ahmadsaleh99.github.io/template-two/",
     gitLink: "https://github.com/AhmadSaleh99/template-two",
   },
